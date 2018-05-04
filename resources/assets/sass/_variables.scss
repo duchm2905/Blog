@@ -1,0 +1,20 @@
+
+// Body
+$body-bg: #f5f8fa;
+$black-color: #000000;
+$white-color: #ffffff;
+$gray-color: #cccccc;
+$text-hover:#cb3837;
+$text-color:#337ab7;
+$sidebar-color:#f8f8f8;
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}

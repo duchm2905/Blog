@@ -1,0 +1,127 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.admin{
+  background: $black-color;
+  color: $white-color;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+
+}
+.admin{
+  h1{
+    font-size:25px;
+    margin-bottom: 0 !important;
+  }
+}
+.userlogin{
+  font-weight: bold;
+  color: $white-color;
+  cursor: pointer;
+  position: relative;
+  padding: 20px 0;
+  i{
+    padding-left: 10px;
+  }
+  .userlogout{
+    position: absolute;
+    display: none;
+    background:#222;
+    left: 0;
+    right:0;
+    z-index: 99;
+    opacity: 0;
+    i{
+      padding-right: 10px;
+    }
+  }
+  &:hover{
+    .userlogout{
+      display: block;
+      top:50px;
+      padding: 10px 0;
+      @include transition(0.4s all);
+      opacity: 1;
+      z-index: 99;
+      a{
+        color:#fff
+      }
+    }
+  }
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+body{
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background: $white-color;
+}
+.left-sidebar{
+  background: $sidebar-color;
+  padding-left: 0;
+  ul.list-unstyled{
+    &li:last-child{
+      border-bottom: 0;
+    }
+    li{
+      padding: 15px;
+      border-bottom:1px solid $gray-color;
+      a {
+        color: $text-color;
+        &:hover{
+          color: $text-hover;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.right-block{
+  margin-top: 15px;
+}
+table.dataTable{
+  tbody{
+    th,td{
+      padding: 18px;
+    }
+  }
+}
+.dataTables_wrapper {
+  .dataTables_filter {
+    margin-bottom: 20px;
+  }
+  .dataTables_info {
+    padding: 18px;
+  }
+  .paging_simple_numbers {
+    padding-top: 10px;
+  }
+}
+.page-title{
+  margin-bottom: 20px;
+}
